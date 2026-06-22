@@ -26,7 +26,7 @@ function About() {
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="max-w-3xl">
             <div className="inline-flex items-center gap-2 rounded-full glass-dark px-4 py-2 text-xs uppercase tracking-[0.18em] text-white/90">Our story</div>
             <h1 className="mt-5 font-display text-5xl md:text-7xl font-medium text-white leading-[1.02]">
-              Born in <span className="text-gradient-warm italic">Uttar Pradesh.</span> Serving communities with purpose.
+              Born in <span className="text-gradient-warm italic">India.</span> Serving communities with purpose.
             </h1>
             <p className="mt-6 max-w-2xl text-lg text-white/75">
               Gates ETH Foundation is a community-driven non-profit organization based in Noida, Uttar Pradesh, committed to empowering women, youth, children with special needs and communities through education, inclusion, mental wellness and sustainable development initiatives. Since 2011, the Foundation has worked to create meaningful opportunities that strengthen individuals and foster community growth.
@@ -46,7 +46,7 @@ function About() {
             <div className="mt-8 space-y-6">
               {[
                 { icon: Eye, title: "Vision", text: "To build an inclusive and empowered society where every child, woman, youth and service professional has the opportunity to learn, grow, thrive and contribute with dignity." },
-                { icon: Target, title: "Mission", text: "To create sustainable social impact through Project Jugnu, She Rises, The Next Step and Healing The Heroes by promoting inclusion, education, skill development, mental wellness and community empowerment." },
+                { icon: Target, title: "Mission", text: "To create sustainable social impact through Project Jugnu, She Rises, The Next Chapeter  and Healing The Heroes by promoting inclusion, education, skill development, mental wellness and community empowerment." },
                 { icon: Sparkles, title: "Values", text: "Compassion. Inclusion. Integrity. Community Leadership. Transparency. Sustainable Impact." },
               ].map((v) => (
                 <div key={v.title} className="flex gap-4">
@@ -108,11 +108,11 @@ function About() {
         </p>
       </div>
 
-      {/* The Next Step */}
+      {/* The Next Chapeter  */}
       <div className="rounded-3xl bg-white p-8 shadow-elevated border border-[var(--border)]">
         <div className="mb-4 text-3xl">🚀</div>
         <h3 className="font-display text-2xl font-semibold text-[var(--navy-deep)]">
-          The Next Step
+          The Next Chapeter 
         </h3>
         <p className="mt-3 text-sm text-[var(--muted-foreground)] leading-relaxed">
           Equipping youth with future-ready skills, career guidance,

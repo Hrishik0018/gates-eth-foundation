@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import { ArrowRight, Heart, CheckCircle2 } from "lucide-react";
-import heroImg from "@/assets/hero-women.png";
+import jugnuheroImg from "@/assets/jugnu.png";
 
 const badges = [
   "Established 2011",
@@ -98,10 +98,13 @@ export function Hero() {
             transition={{ duration: 1, delay: 0.2 }}
             className="relative"
           >
-            <div className="relative aspect-[4/5] rounded-3xl overflow-hidden ring-glow">
-              <img src={heroImg} alt="Communities united in empowerment workshop" className="absolute inset-0 h-full w-full object-cover" />
-              <div className="absolute inset-0 bg-gradient-to-t from-[var(--navy-deep)]/70 via-transparent to-transparent" />
-            </div>
+            <div className="relative rounded-3xl overflow-hidden ring-glow bg-white">
+  <img
+    src={jugnuheroImg}
+    alt="Communities united in empowerment workshop"
+    className="w-full h-auto object-contain"
+  />
+</div>
 
             <motion.div
               initial={{ opacity: 0, y: 20 }}

@@ -1,8 +1,8 @@
 import { Link } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import { ArrowRight, Heart, Sparkles, Users, BookOpen } from "lucide-react";
-import jugnuImg from "@/assets/jugnu.jpg";
 
+import jugnuHeroDetail from "@/assets/2jugnu.jpg";
 export default function HeroSection() {
   return (
     <section className="relative pt-36 pb-24 overflow-hidden gradient-hero">
@@ -108,7 +108,7 @@ export default function HeroSection() {
         >
           <div className="aspect-[4/5] overflow-hidden rounded-3xl ring-glow">
             <img
-              src={jugnuImg}
+              src={jugnuHeroDetail}
               alt="Project Jugnu"
               className="h-full w-full object-cover"
             />
@@ -139,7 +139,7 @@ export default function HeroSection() {
               Belief
             </p>
             <p className="font-semibold text-white">
-              Ability Over Disability
+              Potential Beyond Labels
             </p>
           </div>
         </motion.div>

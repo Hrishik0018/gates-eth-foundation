@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { createFileRoute, Link } from "@tanstack/react-router";
-
+import ResourceHubNavigation from "../../components/ResourceHubNavigation";
 export const Route = createFileRoute("/resources/after-diagnosis")({
   component: AfterDiagnosis,
 });
@@ -255,83 +255,11 @@ export default function AfterDiagnosis() {
           </div>
 
           {/* Series Navigation Links */}
-          <div className="bg-slate-900 text-slate-100 p-6 rounded-2xl shadow-sm space-y-4">
-  <h3 className="text-base font-bold text-amber-400 uppercase tracking-wider">
-    Project Jugnu Resource Hub
-  </h3>
-
-  <p className="text-slate-400 text-xs">
-    Explore all parent support guides and resources developed under Project
-    Jugnu.
-  </p>
-
-  <nav className="space-y-2 text-sm">
-
-    <span className="block p-3 rounded-xl bg-slate-800 text-amber-300 font-medium">
-      1. After Diagnosis (Current Guide)
-    </span>
-
-    <Link
-      to="/resources/choosing-schools"
-      className="block p-3 rounded-xl text-slate-300 hover:bg-slate-800 transition-colors"
-    >
-      2. Choosing Schools
-    </Link>
-
-    <Link
-      to="/resources/therapy-guidance"
-      className="block p-3 rounded-xl text-slate-300 hover:bg-slate-800 transition-colors"
-    >
-      3. Therapy Guidance
-    </Link>
-
-    <Link
-      to="/resources/daily-living-support"
-      className="block p-3 rounded-xl text-slate-300 hover:bg-slate-800 transition-colors"
-    >
-      4. Daily Living Support
-    </Link>
-
-    <Link
-      to="/resources/communication-tips"
-      className="block p-3 rounded-xl text-slate-300 hover:bg-slate-800 transition-colors"
-    >
-      5. Communication Tips
-    </Link>
-
-    <Link
-      to="/resources/behaviour-support"
-      className="block p-3 rounded-xl text-slate-300 hover:bg-slate-800 transition-colors"
-    >
-      6. Behaviour Support
-    </Link>
-
-    <Link
-      to="/resources/parent-wellbeing"
-      className="block p-3 rounded-xl text-slate-300 hover:bg-slate-800 transition-colors"
-    >
-      7. Parent Wellbeing
-    </Link>
-    <Link
-  to="/resources/government-schemes"
-  className="block p-3 rounded-xl text-slate-300 hover:bg-slate-800 transition-colors"
->
-  8. Government Schemes & Legal Rights
-</Link>
-
-<Link
-  to="/resources/down-syndrome-guide"
-  className="block p-3 rounded-xl text-slate-300 hover:bg-slate-800 transition-colors"
->
-  9. Down Syndrome Guide
-</Link>
-
-  </nav>
-</div>
+         
         </aside>
 
       </main>
-
+              <ResourceHubNavigation currentPage="/resources/after-diagnosis" />
       {/* Footer Branding */}
     </div>
   );

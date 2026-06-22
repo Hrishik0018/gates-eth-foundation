@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { createFileRoute, Link } from "@tanstack/react-router";
-
+import ResourceHubNavigation from "../../components/ResourceHubNavigation";
 export const Route = createFileRoute("/resources/parent-wellbeing")({
   component: ParentWellbeing,
 });
@@ -211,31 +211,12 @@ export default function ParentWellbeing() {
           </div>
 
           {/* Navigation Hub */}
-          <nav className="space-y-2 text-sm">
-  <span>1. After Diagnosis</span>
-  ...
-  <span className="block p-2 rounded bg-slate-800 text-rose-300 font-medium">
-    7. Parent Wellbeing (Current)
-    <Link
-  to="/resources/government-schemes"
-  className="block p-3 rounded-xl text-slate-300 hover:bg-slate-800 transition-colors"
->
-  8. Government Schemes & Legal Rights
-</Link>
-
-<Link
-  to="/resources/down-syndrome-guide"
-  className="block p-3 rounded-xl text-slate-300 hover:bg-slate-800 transition-colors"
->
-  9. Down Syndrome Guide
-</Link>
-  </span>
-</nav>
+        
 
         </aside>
 
       </main>
-
+              <ResourceHubNavigation currentPage="/resources/parent-wellbeing" />
       {/* Footer Element */}
       <footer className="bg-slate-900 text-slate-400 py-8 px-4 border-t border-slate-800 text-center text-xs mt-16">
         <div className="max-w-4xl mx-auto space-y-2">
