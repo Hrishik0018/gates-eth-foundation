@@ -2,13 +2,13 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/SiteLayout";
 import { motion } from "framer-motion";
 import { Compass, Laptop, Briefcase, Crown, Rocket, Users, ArrowRight, Heart } from "lucide-react";
-import youthImg from "@/assets/next-step.jpg";
+import youthImg from "@/assets/next-step.png";
 
 export const Route = createFileRoute("/youth-development")({
   head: () => ({
     meta: [
       { title: "The Next Chapter  — Gates ETH Foundation" },
-      { name: "description", content: "The Next Chapter : career guidance, digital skills, innovation labs, mentorship and entrepreneurship exposure for India's teenage students." },
+      { name: "description", content: "The Next Chapter : career guidance, digital skills, innovation labs, mentorship and entrepreneurship exposure for India's Youth." },
       { property: "og:title", content: "The Next Chapter  — Youth Development" },
       { property: "og:description", content: "Future-ready skills for the next generation." },
       { property: "og:image", content: youthImg },
@@ -36,7 +36,7 @@ function Page() {
             <h1 className="mt-5 font-display text-5xl md:text-7xl font-medium text-white leading-[1.02]">
               The <span className="text-gradient-cool italic">Next Step</span> for young India.
             </h1>
-            <p className="mt-6 max-w-2xl text-lg text-white/75">From the first interview to the first venture — innovation labs, digital skills and mentorship that walk teenage students into tomorrow.</p>
+            <p className="mt-6 max-w-2xl text-lg text-white/75">From the first interview to the first venture — innovation labs, digital skills and mentorship that walk youth into tomorrow.</p>
           </motion.div>
           <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, delay: 0.2 }}
             className="aspect-square rounded-3xl overflow-hidden ring-glow">
