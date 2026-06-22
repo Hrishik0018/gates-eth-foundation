@@ -7,9 +7,9 @@ import youthImg from "@/assets/next-step.jpg";
 export const Route = createFileRoute("/youth-development")({
   head: () => ({
     meta: [
-      { title: "The Next Chapeter  — Gates ETH Foundation" },
-      { name: "description", content: "The Next Chapeter : career guidance, digital skills, innovation labs, mentorship and entrepreneurship exposure for India's teenage students." },
-      { property: "og:title", content: "The Next Chapeter  — Youth Development" },
+      { title: "The Next Chapter  — Gates ETH Foundation" },
+      { name: "description", content: "The Next Chapter : career guidance, digital skills, innovation labs, mentorship and entrepreneurship exposure for India's teenage students." },
+      { property: "og:title", content: "The Next Chapter  — Youth Development" },
       { property: "og:description", content: "Future-ready skills for the next generation." },
       { property: "og:image", content: youthImg },
     ],
@@ -32,7 +32,7 @@ function Page() {
       <section className="relative pt-36 pb-16 gradient-hero">
         <div className="mx-auto max-w-7xl px-4 grid lg:grid-cols-[1.1fr_1fr] gap-10 items-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 rounded-full glass-dark px-4 py-2 text-xs uppercase tracking-[0.18em] text-white/90">The Next Chapeter  · Youth Development</div>
+            <div className="inline-flex items-center gap-2 rounded-full glass-dark px-4 py-2 text-xs uppercase tracking-[0.18em] text-white/90">The Next Chapter  · Youth Development</div>
             <h1 className="mt-5 font-display text-5xl md:text-7xl font-medium text-white leading-[1.02]">
               The <span className="text-gradient-cool italic">Next Step</span> for young India.
             </h1>
@@ -40,7 +40,7 @@ function Page() {
           </motion.div>
           <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, delay: 0.2 }}
             className="aspect-square rounded-3xl overflow-hidden ring-glow">
-            <img src={youthImg} alt="Indian teenagers in The Next Chapeter  innovation lab" className="h-full w-full object-cover" />
+            <img src={youthImg} alt="Indian teenagers in The Next Chapter  innovation lab" className="h-full w-full object-cover" />
           </motion.div>
         </div>
       </section>

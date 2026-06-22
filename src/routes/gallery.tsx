@@ -15,7 +15,7 @@ export const Route = createFileRoute("/gallery")({
       { title: "Gallery — Gates ETH Foundation" },
       { name: "description", content: "Stories, events, initiatives and community impact from Gates ETH Foundation and its flagship programs." },
       { property: "og:title", content: "Gallery — Gates ETH" },
-      { property: "og:description", content: "Stories of Impact.Moments of Change. Explore moments from Project Jugnu, She Rises, The Next Chapeter , Healing The Heroes and community initiatives that continue to create meaningful impact." },
+      { property: "og:description", content: "Stories of Impact.Moments of Change. Explore moments from Project Jugnu, She Rises, The Next Chapter , Healing The Heroes and community initiatives that continue to create meaningful impact." },
       { property: "og:image", content: women },
     ],
   }),
@@ -26,7 +26,7 @@ const CATEGORIES = [
   "All",
   "Project Jugnu",
   "She Rises",
-  "The Next Chapeter ",
+  "The Next Chapter ",
   "Healing The Heroes",
   "Awards & Recognition",
   "Community Events",
@@ -42,7 +42,7 @@ const tiles = [
   {
     src: "/gallery/2.jpg",
     alt: "Inclusive Learning Session",
-    cat: "The Next Chapeter ",
+    cat: "The Next Chapter ",
   },
 
   {

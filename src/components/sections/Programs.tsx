@@ -9,7 +9,7 @@ import healingImg from "@/assets/healing-heroes.jpg";
 const programs = [
   { icon: Star, title: "Project Jugnu", desc: "Our flagship inclusion initiative empowering children with autism and special needs through recognition, creativity, family support and community.", img: jugnuImg, accent: "var(--saffron)", tag: "Flagship Initiative", to: "/jugnu", featured: true },
   { icon: HeartHandshake, title: "She Rises", desc: "Skill, livelihood, leadership and financial literacy for women across Uttar Pradesh and North India.", img: sheRisesImg, accent: "var(--saffron)", tag: "Women Empowerment", to: "/women-empowerment" },
-  { icon: GraduationCap, title: "The Next Chapeter ", desc: "Career guidance, digital skills, innovation labs and mentorship for India's teenage students.", img: nextStepImg, accent: "var(--teal)", tag: "Youth Development", to: "/youth-development" },
+  { icon: GraduationCap, title: "The Next Chapter ", desc: "Career guidance, digital skills, innovation labs and mentorship for India's teenage students.", img: nextStepImg, accent: "var(--teal)", tag: "Youth Development", to: "/youth-development" },
   { icon: Shield, title: "Healing The Heroes", desc: "Counselling, resilience and family support for armed forces, police, veterans and allied personnel.", img: healingImg, accent: "var(--navy)", tag: "Mental Wellness", to: "/mental-wellness" },
 ];
 

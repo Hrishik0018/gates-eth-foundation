@@ -46,7 +46,7 @@ function About() {
             <div className="mt-8 space-y-6">
               {[
                 { icon: Eye, title: "Vision", text: "To build an inclusive and empowered society where every child, woman, youth and service professional has the opportunity to learn, grow, thrive and contribute with dignity." },
-                { icon: Target, title: "Mission", text: "To create sustainable social impact through Project Jugnu, She Rises, The Next Chapeter  and Healing The Heroes by promoting inclusion, education, skill development, mental wellness and community empowerment." },
+                { icon: Target, title: "Mission", text: "To create sustainable social impact through Project Jugnu, She Rises, The Next Chapter  and Healing The Heroes by promoting inclusion, education, skill development, mental wellness and community empowerment." },
                 { icon: Sparkles, title: "Values", text: "Compassion. Inclusion. Integrity. Community Leadership. Transparency. Sustainable Impact." },
               ].map((v) => (
                 <div key={v.title} className="flex gap-4">
@@ -108,11 +108,11 @@ function About() {
         </p>
       </div>
 
-      {/* The Next Chapeter  */}
+      {/* The Next Chapter  */}
       <div className="rounded-3xl bg-white p-8 shadow-elevated border border-[var(--border)]">
         <div className="mb-4 text-3xl">🚀</div>
         <h3 className="font-display text-2xl font-semibold text-[var(--navy-deep)]">
-          The Next Chapeter 
+          The Next Chapter 
         </h3>
         <p className="mt-3 text-sm text-[var(--muted-foreground)] leading-relaxed">
           Equipping youth with future-ready skills, career guidance,
