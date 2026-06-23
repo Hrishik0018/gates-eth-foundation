@@ -27,7 +27,7 @@ function ProgramsPage() {
               Programs with <span className="text-gradient-cool italic">depth</span>, not breadth.
             </h1>
             <p className="mt-6 max-w-2xl text-lg text-white/75">
-              We have intentionally stayed focused: four pillars, each backed by 10+ years of grassroots learning, local partnerships and measurable outcomes.
+              We have intentionally stayed focused: Five Pillars, each backed by 10+ years of grassroots learning, local partnerships and measurable outcomes.
             </p>
           </motion.div>
         </div>

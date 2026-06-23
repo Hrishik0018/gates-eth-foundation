@@ -1,16 +1,25 @@
 import { motion } from "framer-motion";
 import { Link } from "@tanstack/react-router";
-import { ArrowUpRight, GraduationCap, Shield, HeartHandshake, Star } from "lucide-react";
+import { ArrowUpRight, GraduationCap, Shield, HeartHandshake,Library, Star } from "lucide-react";
 import jugnuImg from "@/assets/2jugnu.jpg";
 import sheRisesImg from "@/assets/she-rises.png";
 import nextStepImg from "@/assets/next-step.png";
 import healingImg from "@/assets/healing-heroes.jpg";
-
+import libraryImg from "@/assets/library-revival.jpg";
 const programs = [
   { icon: Star, title: "Project Jugnu", desc: "Our flagship inclusion initiative empowering children with autism and special needs through recognition, creativity, family support and community.", img: jugnuImg, accent: "var(--saffron)", tag: "Flagship Initiative", to: "/jugnu", featured: true },
   { icon: HeartHandshake, title: "She Rises", desc: "Skill, livelihood, leadership and financial literacy for women across Uttar Pradesh and North India.", img: sheRisesImg, accent: "var(--saffron)", tag: "Women Empowerment", to: "/women-empowerment" },
   { icon: GraduationCap, title: "The Next Chapter ", desc: "Career guidance, digital skills, innovation labs and mentorship for India's youth.", img: nextStepImg, accent: "var(--teal)", tag: "Youth Development", to: "/youth-development" },
   { icon: Shield, title: "Healing The Heroes", desc: "Counselling, resilience and family support for armed forces, police, veterans and allied personnel.", img: healingImg, accent: "var(--navy)", tag: "Mental Wellness", to: "/mental-wellness" },
+  {
+  icon: Library,
+  title: "Public Library Revival Mission",
+  desc: "Reviving public libraries across India through modernization, digital learning spaces, literacy initiatives and community engagement.",
+  img: libraryImg,
+  accent: "var(--teal)",
+  tag: "Literacy & Learning",
+  to: "/public-library-revival",
+},
 ];
 
 export function Programs() {
@@ -23,7 +32,7 @@ export function Programs() {
               <span className="h-1.5 w-1.5 rounded-full bg-[var(--teal)]" /> Our Programs
             </div>
             <h2 className="mt-4 font-display text-4xl md:text-5xl lg:text-6xl font-medium text-[var(--navy-deep)] leading-[1.05]">
-              Four pillars, one <span className="italic text-[var(--teal)]">unwavering</span> promise.
+              Five Pillars, one <span className="italic text-[var(--teal)]">unwavering</span> promise.
             </h2>
           </div>
           <p className="max-w-md text-base text-[var(--muted-foreground)] leading-relaxed">
@@ -31,7 +40,7 @@ export function Programs() {
           </p>
         </div>
 
-        <div className="mt-16 grid gap-6 md:grid-cols-2">
+        <div className="mt-16 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {programs.map((p, i) => (
             <motion.article
               key={p.title}
@@ -47,7 +56,7 @@ export function Programs() {
                 </div>
               )}
               <div className="relative aspect-[16/10] overflow-hidden">
-                <img src={p.img} alt={p.title} loading="lazy" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <img src={p.img} alt={p.title} loading="lazy" className="absolute inset-0 h-full w-full object-contain transition-transform duration-700 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[var(--navy-deep)]/80 via-[var(--navy-deep)]/10 to-transparent" />
                 <div className="absolute top-4 left-4 inline-flex items-center gap-1.5 rounded-full glass-dark px-3 py-1 text-[10px] uppercase tracking-widest text-white">
                   <span className="h-1 w-1 rounded-full" style={{ background: p.accent }} /> {p.tag}

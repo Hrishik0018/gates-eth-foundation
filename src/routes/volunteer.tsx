@@ -125,6 +125,7 @@ function Volunteer() {
                       <option>Women empowerment</option>
                       <option>Youth skill development</option>
                       <option>Armed forces wellness</option>
+                      <option>Libraries Revival</option>
                       <option>Community outreach</option>
                     </select>
                     {errors.interest && <p className="mt-1 text-xs text-[var(--destructive)]">{errors.interest}</p>}
