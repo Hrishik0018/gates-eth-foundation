@@ -12,7 +12,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 
-import libraryHero from "@/assets/library-revival.jpg";
+import libraryHero from "@/assets/library-revival.png";
 
 
 export const Route = createFileRoute("/public-library-revival")({
